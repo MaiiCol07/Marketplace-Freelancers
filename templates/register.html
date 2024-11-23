@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../styles/register.css">
+        <title>Marketplace Freelancers</title>
+    </head>
+    <body>
+        <main>
+            <form action="../functions/register_freelancers.php" method="GET">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" required/>
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" required/>
+                <label for="correo">Correo/Email</label>
+                <input type="email" name="correo" required/>
+                <label for="contrasena">Contraseña</label>
+                <input type="password" name="contrasena" required/>
+                <label for="especialidad">Especialidad</label>
+                <input type="text" name="especialidad" required/>
+                <label for="tarfia">Tarifa por hora</label>
+                <input type="number" name="tarfia" required/>
+                <label for="portafolio">Tu Web</label>
+                <input type="url" name="portafolio"/>
+                <label for="foto">Foto de perfil</label>
+                <input type="file" name="foto"/>
+                <button type="submit">Registrarse</button>
+            </form>
+
+        </main>
+    </body>
+</html>
